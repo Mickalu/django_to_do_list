@@ -1,12 +1,13 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link src="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% block title %}
         <title>To Do List</title>
     {% endblock %}
@@ -15,9 +16,9 @@
     {% block navbar %}
         <nav class="navbar">
             <ul>
-                <li>My name</li>
-                <li>Tasks Done</li>
-                <li>Teams</li>
+                <li> <a> My name </a> </li>
+                <li> <a>Tasks Done</a> </li>
+                <li> <a>Teams</a></li>
             </ul>
         </nav>
 
