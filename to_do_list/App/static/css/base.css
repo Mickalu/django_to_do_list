@@ -4,6 +4,13 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #f2f4f6;
+    color: #1b2d45;
+}
+
+hr{
+    background-color: #b6b6b699;
+    border: none;
+    height: 1px;
 }
 
 .cross_close{
