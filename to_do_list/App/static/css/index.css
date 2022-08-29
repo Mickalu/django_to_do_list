@@ -29,3 +29,34 @@
 .button-add-task:hover{
     background-color: #c5fff6;
 }
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+}
+
+.modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 0;
+    width: 80%;
+    border-radius: 5px;
+}
+
+#modal-add-task{
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content__header{
+    display: flex;
+    justify-content: flex-end;
+}
