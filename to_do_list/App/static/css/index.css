@@ -1,0 +1,31 @@
+.main-content{
+    display: flex;
+    justify-content: center;
+}
+
+.task-content{
+    margin-top: 10px;
+    width: 90%;
+    background-color: #fffffe;
+    border-radius: 5px;
+}
+
+.task-content__header{
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-add-task{
+    color: #00214d;
+    background-color: #00ebc7;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+}
+
+.button-add-task:hover{
+    background-color: #c5fff6;
+}
