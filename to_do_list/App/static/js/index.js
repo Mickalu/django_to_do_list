@@ -10,3 +10,6 @@ function hide_add_task(){
     $("#add-task-div").css('display', 'none');
 }
 
+function submit_add_task(){
+    
+}
