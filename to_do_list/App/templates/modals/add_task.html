@@ -1,0 +1,26 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/modals/add_task.css' %}">
+
+<div id="modal-add-task" class="modal">
+    <div class="modal-content">
+        <div class="modal-content__header">
+            <span class="cross_close" onclick="close_modal_add_task()">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+        </div>
+
+        <div class="modal-content__body">
+            <form class="add-task"> 
+                {% csrf_token %}
+                {{ form_task }}
+                <!-- <div>
+                    <input type="text" id="task-text" placeholder="Task Name">
+                </div>
+                <hr class="hr-text-description">
+                <div>
+                    <textarea id="task-description" placeholder="Description"></textarea>
+                </div> -->
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,9 +1,39 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
 
 {% block content %}
-    <!-- <button onclick="consol_log_coucou()">coucou</button> -->
+    <div class="main-content">
+        <div class="task-content">
+            <div class="task-content__header">
+                <button class="button-add-task" onclick="display_add_task()">Add task</button>
+            </div> 
+            <div class="task-content__body">
+                <div id="add-task-div">
+                    <form class="add-task-form" method="POST" action=""> 
+                        {% csrf_token %}
+                        {{form_task}}
+
+
+
+                        <div class="add-task-form__div_buttons">
+                            <button class="add-task-form__cancel" onclick="hide_add_task()">Cancel</button>
+                            
+                            <button type="submit" onclick="submit_add_task()" class="add-task-form__submit" >
+                                <i class="fa-solid fa-plus"></i> Add task
+                            </button>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <script src="{% static 'js/index.js' %}"></script>
+
+    
 {% endblock %}

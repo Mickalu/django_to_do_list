@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    {% block link %}
+
+    {% endblock %}
+
     {% block title %}
         <title>To Do List</title>
     {% endblock %}
@@ -16,9 +21,9 @@
     {% block navbar %}
         <nav class="navbar">
             <ul>
-                <li> <a> My name </a> </li>
-                <li> <a>Tasks Done</a> </li>
-                <li> <a>Teams</a></li>
+                <li> <a>  <a>My name </a> </a> </li>
+                <li> <a> <a>Tasks Done</a> </a> </li>
+                <li> <a> <a>Teams</a></a> </li>
             </ul>
         </nav>
 
@@ -29,6 +34,7 @@
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/983d80d3da.js" crossorigin="anonymous"></script>
       
 </body>
 </html>

@@ -1,0 +1,130 @@
+.main-content{
+    display: flex;
+    justify-content: center;
+}
+
+.task-content{
+    margin-top: 10px;
+    width: 90%;
+    background-color: #fffffe;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.task-content__header{
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-add-task{
+    color: #00214d;
+    background-color: #00ebc7;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+}
+
+.button-add-task:hover{
+    background-color: #c5fff6;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+}
+
+.modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 0;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.modal-content__header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#add-task-div{
+    display: none;
+    justify-content: center;
+}
+
+.add-task-form{
+    width: 70%;
+    border: 1px solid #b6b6b699;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#task-text{
+    border: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+#task-text::placeholder {
+    opacity: 0.5;
+}
+
+#task-text:focus{
+    outline: none;
+}
+
+/* .hr-text-description{
+    width: 50%;
+} */
+
+#task-description{
+    border: 0;
+    width: 100%;
+    height: 6rem;
+}
+
+#task-description::placeholder{
+    opacity: 0.5;
+}
+
+#task-description:focus{
+    outline: none;
+}
+
+.add-task-form__div_buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-task-form__submit{
+    margin-left: 5px;
+    color: #00214d;
+    background-color: #00ebc782;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    padding: 0.4rem 0.5rem;
+    font-size: 13px;
+}
+
+.add-task-form__submit:hover{
+    background-color: #00ebc7;
+}
+
+.add-task-form__cancel{
+    margin-left: 5px;
+    color: #00214d;
+    background-color: #f0f0f0b3;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    padding: 0.4rem 0.8rem;
+    font-size: 13px;
+}
+
+.add-task-form__cancel:hover{
+    background-color: #bebebeb3;
+}

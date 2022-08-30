@@ -1,0 +1,56 @@
+.modal-content{
+    width: 65%;
+}
+
+#modal-add-task{
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content__body{
+    display: flex;
+    justify-content: center;
+}
+
+.add-task{
+    width: 90%;
+    border: 1px solid #b6b6b699;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#task-text{
+    border: 0;
+    margin-bottom: 10px;
+}
+#task-text::placeholder {
+    opacity: 0.5;
+}
+
+#task-text:focus{
+    outline: none;
+}
+
+/* .hr-text-description{
+    width: 50%;
+} */
+
+#task-description{
+    border: 0;
+    width: 100%;
+    height: 6rem;
+}
+
+#task-description::placeholder{
+    opacity: 0.5;
+}
+
+#task-description:focus{
+    outline: none;
+}
