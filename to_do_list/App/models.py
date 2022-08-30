@@ -11,9 +11,10 @@ class Profil(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = models.ImageField(upload_to = 'profile_image', blank=True, null=True)
 
-class Tasks(models.Model):
+class Task(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
     team = models.ForeignKey(Team, on_delete=models.CASCADE, blank=True, null=True)
 
     name = models.CharField(max_length=100)
     description = models.TextField(blank=True, null=True)
+    state = models.BooleanField(default=False)

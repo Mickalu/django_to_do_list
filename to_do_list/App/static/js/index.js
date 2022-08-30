@@ -2,10 +2,11 @@ function consol_log_coucou(){
     console.log('coucou');
 }
 
-function open_modal_add_task(){
-    $("#modal-add-task").css('display', 'block');
+function display_add_task(){
+    $("#add-task-div").css('display', 'flex');
 }
 
-function close_modal_add_task(){
-    $("#modal-add-task").css('display', 'none');
+function hide_add_task(){
+    $("#add-task-div").css('display', 'none');
 }
+
